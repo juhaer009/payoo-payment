@@ -21,3 +21,18 @@ document.getElementById('add-money-btn').
         const updatedBalance = addAmmount + availableBalance;
         document.getElementById('available-balance').innerText = updatedBalance;
     });
+
+    // toggling feature
+
+    document.getElementById('add-btn').
+        addEventListener('click', function(){
+            document.getElementById('cash-out-container').style.display = 'none';
+            document.getElementById('add-money-container').style.display = 'block';
+        });
+
+    document.getElementById('cash-out-btn').
+        addEventListener('click', function(){
+            document.getElementById('add-money-container').style.display = 'none';
+            document.getElementById('cash-out-container').style.display = 'block';
+            
+        });

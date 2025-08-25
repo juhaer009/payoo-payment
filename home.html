@@ -11,6 +11,7 @@
 
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/hover-style.css">
 </head>
 <body class="bg-[#f4f5f7] h-[100vh]">
     <div class="bg-white max-w-lg mx-auto rounded-b-2xl">
@@ -32,27 +33,27 @@
         </div>
 
         <div class="min-h-10 grid grid-cols-3 gap-3 p-4">
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl">
+            <div id="add-btn" class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
                 <img src="./assets/wallet1.png" alt="" class="mx-auto">
                 <p>Add Money</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl">
+            <div id="cash-out-btn" class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
                 <img src="./assets/send1.png" alt="" class="mx-auto">
                 <p>Cashout</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl">
+            <div class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
                 <img src="./assets/money1.png" alt="" class="mx-auto">
                 <p>Transfer Money</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl">
+            <div class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
                 <img src="./assets/bonus1.png" alt="" class="mx-auto">
                 <p>Get Bonus</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl">
+            <div class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
                 <img src="./assets/purse1.png" alt="" class="mx-auto">
                 <p>Pay Bill</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl">
+            <div class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
                 <img src="./assets/transaction1.png" alt="" class="mx-auto">
                 <p>Transaction</p>
             </div>
@@ -60,7 +61,7 @@
     </div>
 
     <!-- add money section -->
-    <div class="all-form-section max-w-lg mx-auto mt-3">
+    <div id="add-money-container" class="all-form-section max-w-lg mx-auto mt-3">
         <h1 class="font-bold">Add Money</h1>
         <form action="" class="bg-white rounded-3xl p-4 mt-2">
             <div>
@@ -85,6 +86,26 @@
                 <input type="text" placeholder="Enter 4 Digit Pin Number" id="add-pin" class="input bg-[#f4f5f7] rounded-3xl  mt-2 w-full"/>
             </div>
             <button type="button" id="add-money-btn" class="btn bg-[#0874F2] text-white w-full mt-5 rounded-3xl">Add Money</button>
+        </form>                
+    </div>
+
+    <!-- cash out section -->
+    <div id="cash-out-container" class="all-form-section max-w-lg mx-auto mt-3" style="display: none;">
+        <h1 class="font-bold">Cash Out</h1>
+        <form action="" class="bg-white rounded-3xl p-4 mt-2">
+            <div>
+                <label class="font-semibold text-gray-500" for="">Agent Number</label>
+                <input type="text" placeholder="Enter 11 digit number" class="input bg-[#f4f5f7] rounded-3xl  mt-2 w-full" />
+            </div>
+            <div>
+                <label class="font-semibold text-gray-500" for="">Ammout</label>
+                <input type="text" placeholder="Enter ammount to withdraw" class="input bg-[#f4f5f7] rounded-3xl  mt-2 w-full" />
+            </div>
+            <div>
+                <label class="font-semibold text-gray-500" for="">Pin Number</label>
+                <input type="text" placeholder="Enter 4 Digit Pin Number" class="input bg-[#f4f5f7] rounded-3xl  mt-2 w-full"/>
+            </div>
+            <button type="button" id="add-money-btn" class="btn bg-[#0874F2] text-white w-full mt-5 rounded-3xl">Withdraw Money</button>
         </form>                
     </div>
 
