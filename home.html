@@ -11,7 +11,6 @@
 
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./styles/hover-style.css">
 </head>
 <body class="bg-[#f4f5f7] h-[100vh]">
     <div class="bg-white max-w-lg mx-auto rounded-b-2xl">
@@ -33,27 +32,27 @@
         </div>
 
         <div class="min-h-10 grid grid-cols-3 gap-3 p-4">
-            <div id="add-btn" class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
+            <div id="add-btn" class="form-btn border-2 border-gray-300 text-center p-4 rounded-xl">
                 <img src="./assets/wallet1.png" alt="" class="mx-auto">
                 <p>Add Money</p>
             </div>
-            <div id="cash-out-btn" class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
+            <div id="cash-out-btn" class="form-btn border-2 border-gray-300 text-center p-4 rounded-xl">
                 <img src="./assets/send1.png" alt="" class="mx-auto">
                 <p>Cashout</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
+            <div class="form-btn border-2 border-gray-300 text-center p-4 rounded-xl">
                 <img src="./assets/money1.png" alt="" class="mx-auto">
                 <p>Transfer Money</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
+            <div class="form-btn border-2 border-gray-300 text-center p-4 rounded-xl">
                 <img src="./assets/bonus1.png" alt="" class="mx-auto">
                 <p>Get Bonus</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
+            <div class="form-btn border-2 border-gray-300 text-center p-4 rounded-xl">
                 <img src="./assets/purse1.png" alt="" class="mx-auto">
                 <p>Pay Bill</p>
             </div>
-            <div class="border-2 border-gray-300 text-center p-4 rounded-xl hover-effect">
+            <div class="form-btn border-2 border-gray-300 text-center p-4 rounded-xl">
                 <img src="./assets/transaction1.png" alt="" class="mx-auto">
                 <p>Transaction</p>
             </div>
@@ -61,7 +60,7 @@
     </div>
 
     <!-- add money section -->
-    <div id="add-money-container" class="all-form-section max-w-lg mx-auto mt-3">
+    <div id="add-money-container" class="form max-w-lg mx-auto mt-3" style="display: none;">
         <h1 class="font-bold">Add Money</h1>
         <form action="" class="bg-white rounded-3xl p-4 mt-2">
             <div>
@@ -90,7 +89,7 @@
     </div>
 
     <!-- cash out section -->
-    <div id="cash-out-container" class="all-form-section max-w-lg mx-auto mt-3" style="display: none;">
+    <div id="cash-out-container" class="form max-w-lg mx-auto mt-3" style="display: none;">
         <h1 class="font-bold">Cash Out</h1>
         <form action="" class="bg-white rounded-3xl p-4 mt-2">
             <div>
